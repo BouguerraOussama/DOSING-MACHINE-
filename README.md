@@ -86,7 +86,7 @@ python3 dosing_machine.py 192.168.1.100 8080 -m socket
 
 ### 📊 Monitoring temps réel
 ```
-[DOSING] Paquets envoyés: 15847 | Taux: 1584.7 pkt/s | Durée: 10.0s
+
 ```
 
 ### 🧵 Multi-threading
@@ -117,15 +117,7 @@ packet = ip_layer / tcp_layer
 
 ## 📈 Métriques et Rapport
 
-Le tool génère un rapport détaillé à l'arrêt :
-```
-╔══════════════════════════════════════════════════════════════╗
-║                    RAPPORT D'ATTAQUE                        ║
-╠══════════════════════════════════════════════════════════════╣
-║ Paquets envoyés: 25000     Durée: 15.8s                    ║
-║ Taux moyen: 1582.28 pkt/s                                   ║
-║ Cible: 192.168.1.100:80                                     ║
-╚══════════════════════════════════════════════════════════════╝
+
 ```
 
 ## 🎓 Contexte Éducatif
@@ -148,39 +140,7 @@ wireshark -i eth0 -f "host <target_ip>"
 netstat -an | grep SYN_RECV | wc -l
 ```
 
-## ⚖️ Aspects Légaux
 
-### ✅ Usages autorisés
-- Tests sur vos propres systèmes
-- Environnements de lab isolés
-- Recherche académique encadrée
-- Formation en cybersécurité
-
-### ❌ Usages interdits
-- Attaque de systèmes tiers
-- Perturbation de services
-- Tests sans autorisation explicite
-- Usage commercial malveillant
-
-## 🤝 Contribution
-
-Les contributions sont bienvenues pour :
-- Amélioration du code
-- Nouvelles fonctionnalités éducatives
-- Documentation technique
-- Cas d'usage pédagogiques
-
-## 📚 Ressources Complémentaires
-
-### Documentation technique
-- [RFC 793 - TCP Protocol](https://tools.ietf.org/html/rfc793)
-- [Scapy Documentation](https://scapy.readthedocs.io/)
-- [SYN Flood Attack Analysis](https://www.cloudflare.com/learning/ddos/syn-flood-ddos-attack/)
-
-### Défenses contre SYN Flood
-- **SYN Cookies** : Validation sans état
-- **Rate Limiting** : Limitation du taux de connexions
-- **Firewall Rules** : Filtrage du trafic malveillant
 
 ## 👨‍💻 Auteur
 
@@ -191,8 +151,3 @@ Les contributions sont bienvenues pour :
 
 ---
 
-> *"La cybersécurité commence par la compréhension des vulnérabilités"*
-
-## 📄 License
-
-Usage éducatif uniquement. Toute utilisation malveillante est strictement interdite et de la responsabilité de l'utilisateu
